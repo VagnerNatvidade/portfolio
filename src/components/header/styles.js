@@ -12,6 +12,11 @@ export const Container = styled.div`
     font-family: "Outfit", sans-serif;
     font-size: 32px;
     color: ${({ theme }) => theme.COLORS.YELLOW_100};
+    transition: 0.1s ease;
+
+    &:hover {
+      transform: scale(1.05);
+    }
   }
 
   div {
@@ -27,6 +32,11 @@ export const Container = styled.div`
     color: ${({ theme }) => theme.COLORS.LIGHT_100};
     background: none;
     cursor: pointer;
+    transition: 0.1s ease;
+
+    &:hover {
+      transform: scale(1.1);
+    }
   }
 
   svg {
