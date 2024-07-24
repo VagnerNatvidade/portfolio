@@ -1,4 +1,5 @@
-import { Header } from "../../components/header";
+import { Header } from "../../components/Header";
+import { Photo } from "../../components/Photo";
 import { Container } from "./styles";
 
 export function Home() {
@@ -24,11 +25,7 @@ export function Home() {
           </p>
         </div>
       </div>
-      <div className="photo">
-        <div>
-          <img src="https://i.ibb.co/8dXSzps/IMG-1251-1.png" alt="minha foto" />
-        </div>
-      </div>
+      <Photo />
     </Container>
   );
 }
