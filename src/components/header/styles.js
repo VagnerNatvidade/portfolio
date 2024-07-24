@@ -5,7 +5,6 @@ export const Container = styled.div`
   align-items: end;
   justify-content: space-between;
   padding: 24px;
-  color: ${({ theme }) => theme.COLORS.LIGHT_100};
   font-size: 16px;
 
   h1 {
@@ -29,7 +28,8 @@ export const Container = styled.div`
     height: 24px;
     border: none;
     font-size: 16px;
-    color: ${({ theme }) => theme.COLORS.LIGHT_100};
+    color: ${({ theme, $isblue }) =>
+      $isblue ? theme.COLORS.LIGHT_100 : theme.COLORS.BLUE_100};
     background: none;
     cursor: pointer;
     transition: 0.1s ease;

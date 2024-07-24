@@ -1,11 +1,9 @@
 import { FiGrid } from "react-icons/fi";
-
-import nativLogo from "../../assets/logo.svg";
 import { Container } from "./styles";
 
-export function Header() {
+export function Header({ isBlue }) {
   return (
-    <Container>
+    <Container $isblue={isBlue}>
       <h1>nativ</h1>
       <div>
         <button>EN</button>

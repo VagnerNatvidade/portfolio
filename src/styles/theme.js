@@ -4,7 +4,7 @@ export default {
     LIGHT_200: "#EAEDFB",
 
     DARK_200: "#333333",
-    DARK_400: "666666",
+    DARK_400: "#666666",
 
     BLUE_100: "#2D4FD6",
 
