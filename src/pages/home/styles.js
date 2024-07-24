@@ -17,6 +17,7 @@ export const Container = styled.div`
     h1 {
       width: 180px;
       margin-bottom: 16px;
+      font-family: "Outfit", sans-serif;
       color: ${({ theme }) => theme.COLORS.YELLOW_100};
 
       span {
