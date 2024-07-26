@@ -1,10 +1,12 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  display: grid;
-  grid-template-rows: max-content 1fr;
-  height: 100vh;
+  display: flex;
+  align-items: center;
   min-width: 360px;
+  flex: 1;
+  padding: 24px;
+  background: ${({ theme }) => theme.COLORS.LIGHT_100};
 
   ul,
   nav {
@@ -13,9 +15,6 @@ export const Container = styled.div`
 
   nav {
     flex-direction: column;
-    justify-content: center;
-    height: 80%;
-    padding: 0 24px;
 
     a {
       text-decoration: none;

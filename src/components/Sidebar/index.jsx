@@ -4,7 +4,6 @@ import { Container } from "./styles";
 export function Sidebar() {
   return (
     <Container>
-      <Header isBlue={false} />
       <div className="nav">
         <nav>
           <a href="/">home</a>
