@@ -1,12 +1,13 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  display: grid;
-  grid-template-rows: max-content 1fr 1fr;
+  display: flex;
+  flex-direction: column;
   height: 100vh;
   background: ${({ theme }) => theme.COLORS.BLUE_100};
 
   .main {
+    flex: 1;
     min-width: 360px;
     display: flex;
     flex-direction: column;
