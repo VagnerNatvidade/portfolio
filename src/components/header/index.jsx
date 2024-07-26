@@ -3,7 +3,7 @@ import { Container } from "./styles";
 
 export function Header({ isBlue = true }) {
   return (
-    <Container isBlue={isBlue}>
+    <Container $isblue={isBlue}>
       <h1>nativ</h1>
       <div>
         <button>EN</button>
