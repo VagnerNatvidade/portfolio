@@ -28,8 +28,8 @@ export const Container = styled.div`
     height: 24px;
     border: none;
     font-size: 16px;
-    color: ${({ theme, $isblue }) =>
-      $isblue ? theme.COLORS.LIGHT_100 : theme.COLORS.BLUE_100};
+    color: ${({ theme, isBlue }) =>
+      isBlue ? theme.COLORS.LIGHT_100 : theme.COLORS.BLUE_100};
     background: none;
     cursor: pointer;
     transition: 0.1s ease;
