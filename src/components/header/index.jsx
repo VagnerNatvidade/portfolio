@@ -1,9 +1,9 @@
 import { FiGrid } from "react-icons/fi";
 import { Container } from "./styles";
 
-export function Header({ isBlue = true }) {
+export function Header({ isBlue = false }) {
   return (
-    <Container $isblue={isBlue}>
+    <Container $isblue={!isBlue}>
       <h1>nativ</h1>
       <div>
         <button>EN</button>

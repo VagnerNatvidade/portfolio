@@ -5,6 +5,7 @@ export const Container = styled.div`
   align-items: center;
   justify-content: center;
   padding: 24px;
+  flex: 1;
   background: ${({ theme }) => theme.COLORS.YELLOW_100};
 
   > div {

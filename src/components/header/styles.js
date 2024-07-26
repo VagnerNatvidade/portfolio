@@ -6,6 +6,8 @@ export const Container = styled.div`
   justify-content: space-between;
   padding: 24px;
   font-size: 16px;
+  background: ${({ theme, $isblue }) =>
+    $isblue ? theme.COLORS.BLUE_100 : theme.COLORS.LIGHT_100};
 
   h1 {
     font-family: "Outfit", sans-serif;
