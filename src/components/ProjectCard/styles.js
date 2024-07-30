@@ -16,4 +16,13 @@ export const Container = styled.div`
   h1 {
     font-weight: normal;
   }
+
+  a {
+    text-decoration: none;
+    color: ${({ theme }) => theme.COLORS.BLUE_100};
+
+    &:hover {
+      filter: brightness(0.8);
+    }
+  }
 `;
