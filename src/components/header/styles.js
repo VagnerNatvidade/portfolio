@@ -12,7 +12,8 @@ export const Container = styled.div`
   h1 {
     font-family: "Outfit", sans-serif;
     font-size: 32px;
-    color: ${({ theme }) => theme.COLORS.YELLOW_100};
+    color: ${({ theme, $isblue }) =>
+      $isblue ? theme.COLORS.YELLOW_100 : theme.COLORS.BLUE_100};
     transition: 0.1s ease;
 
     &:hover {
