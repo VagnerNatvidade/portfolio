@@ -15,9 +15,9 @@ export function Work() {
             url={"rocketseat.com.br"}
           />
           <ProjectCard
-            projectName={"RocketMovie"}
-            byWho={"by Rocketseat"}
-            url={"rocketseat.com.br"}
+            projectName={"nativ"}
+            byWho={"by me"}
+            url={"in_construction"}
           />
         </div>
       </div>
