@@ -11,12 +11,17 @@ export function Sidebar() {
           <a href="/work">contact</a>
           <ul>
             <li>
-              <a href="https://www.instagram.com/vagner_natividade/">
+              <a
+                target="_blank"
+                href="https://www.instagram.com/vagner_natividade/"
+              >
                 instagram
               </a>
             </li>
             <li>
-              <a href="https://www.linkedin.com/in/vagner-jr/">linkedin</a>
+              <a target="_blank" href="https://www.linkedin.com/in/vagner-jr/">
+                linkedin
+              </a>
             </li>
           </ul>
         </nav>
