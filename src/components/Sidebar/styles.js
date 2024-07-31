@@ -1,12 +1,14 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  display: flex;
-  align-items: center;
-  min-width: 360px;
-  flex: 1;
+  position: absolute;
+  top: 72px;
+  right: 32px;
+  z-index: 10;
   padding: 24px;
+  border-radius: 2px;
   background: ${({ theme }) => theme.COLORS.LIGHT_100};
+  animation: menubar 0.3s forwards;
 
   ul,
   nav {
@@ -48,6 +50,15 @@ export const Container = styled.div`
 
       a {
         color: ${({ theme }) => theme.COLORS.DARK_400};
+      }
+    }
+
+    @keyframes menubar {
+      0% {
+        transform: translateY(-10px);
+      }
+      100% {
+        transform: translateY(0);
       }
     }
   }

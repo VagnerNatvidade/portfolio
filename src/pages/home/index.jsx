@@ -1,11 +1,23 @@
+import { useState } from "react";
+
 import { Header } from "../../components/Header";
 import { Photo } from "../../components/Photo";
+import { Sidebar } from "../../components/Sidebar";
+
 import { Container } from "./styles";
 
 export function Home() {
+  const [sidebar, setSidebar] = useState(false);
+
+  function toggleSidebar() {
+    setSidebar(!sidebar);
+    console.log(sidebar);
+  }
+
   return (
     <Container>
-      <Header />
+      <Header toggleSidebar={toggleSidebar} />
+      {sidebar === true ? <Sidebar /> : null}
       <div className="main">
         <h1>
           Vagner Natividades<span>.</span>
