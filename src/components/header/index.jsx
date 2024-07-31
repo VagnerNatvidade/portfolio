@@ -1,3 +1,5 @@
+import { useEffect, useState } from "react";
+
 import { FiGrid } from "react-icons/fi";
 import { Container } from "./styles";
 
@@ -6,7 +8,7 @@ export function Header({ isBlue = false, toggleSidebar }) {
     <Container $isblue={!isBlue}>
       <h1>nativ</h1>
       <div>
-        <button>EN</button>
+        {/* <button>EN</button> */}
         <button onClick={toggleSidebar}>
           <FiGrid />
         </button>
