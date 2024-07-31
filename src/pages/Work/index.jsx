@@ -1,11 +1,21 @@
+import { useState } from "react";
+
 import { Header } from "../../components/Header";
 import { ProjectCard } from "../../components/ProjectCard";
+import { Sidebar } from "../../components/Sidebar";
 import { Container } from "./styles";
 
 export function Work() {
+  const [sidebar, setSidebar] = useState(false);
+
+  function toggleSidebar() {
+    setSidebar(!sidebar);
+  }
+
   return (
     <Container>
-      <Header isBlue />
+      <Header isBlue toggleSidebar={toggleSidebar} />
+      {sidebar === true ? <Sidebar /> : null}
       <div className="main">
         <h3>All were made with the greatest dedication</h3>
         <div>

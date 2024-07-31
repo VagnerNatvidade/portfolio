@@ -1,10 +1,20 @@
+import { useState } from "react";
+
 import { Header } from "../../components/Header";
+import { Sidebar } from "../../components/Sidebar";
 import { Container } from "./styles";
 
 export function About() {
+  const [sidebar, setSidebar] = useState(false);
+
+  function toggleSidebar() {
+    setSidebar(!sidebar);
+  }
+
   return (
     <Container>
-      <Header />
+      <Header toggleSidebar={toggleSidebar} />
+      {sidebar === true ? <Sidebar /> : null}
       <div className="main">
         <h1>About</h1>
         <p>

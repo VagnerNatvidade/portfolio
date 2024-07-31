@@ -5,9 +5,10 @@ export const Container = styled.div`
   top: 72px;
   right: 32px;
   z-index: 10;
+  text-align: left;
   padding: 24px;
   border-radius: 2px;
-  background: ${({ theme }) => theme.COLORS.LIGHT_100};
+  background: ${({ theme }) => theme.COLORS.LIGHT_200};
   animation: menubar 0.3s forwards;
 
   ul,
